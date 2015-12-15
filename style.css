@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,900,300');
 /*#header {
     background-color:black;
     color:white;
@@ -12,6 +14,11 @@
     float:left;
     padding:5px; 
 }*/
+
+body{
+    font-family: 'Exo', Arial, Sans-Serif;
+}
+
 #section {
     width: 100%;
     margin: 0px auto;
@@ -55,7 +62,6 @@
     text-decoration: underline;
     color: white;
     text-shadow: 1px 1px 4px #000;
-    font-family: Helvetica, Arial, Sans-Serif;
     font-weight: 100px;
     padding: 5px;
     font-size: 2.5em;
