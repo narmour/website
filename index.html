@@ -6,7 +6,7 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script src="test.js"></script>
+   <script src="getData.js"></script>
 </head>
  
 <body>
@@ -16,14 +16,17 @@
 		<img id = "mainImg" src = 'http://orig04.deviantart.net/07eb/f/2013/274/a/5/league_of_legends_windows_8_tile_icon_by_intel_4004-d6ovotm.jpg'>
 		<br/>
 		<br/>
-		<h1 id="title">LoL Statistics</h1>
-		</center>
-		<div class="form">
-			<input id = "sName" type = "text" placeholder = "Summoner Name">
-			<br/>
-			<input class="button" type = "submit" onclick = "makeSummoner()">
-			<p>Summoner ID: <span id="number"></span></p>
+		<h1 class="title">LoL Statistics</h1>
+		<div class="container">
+			<div class="form">
+				<input id = "sName" type = "text" placeholder = "Summoner Name">
+				<br/>
+				<input class="button" type = "submit" onclick = "submit()">
+				<h1 class="title">Stats</h1>
+				<ul id="stats"></ul>
+			</div>
 		</div>
+		</center>
 		
 </div>
 </body>

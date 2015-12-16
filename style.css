@@ -75,7 +75,7 @@ body{
     border: 2px solid white;
 }
 /*Styling for title*/
-#title{
+.title{
     margin: 0px auto;
     text-decoration: underline;
     color: white;
