@@ -1,10 +1,11 @@
 function makeSummoner(){
     var newSummoner = new Summoner();
-     getID(newSummoner);
+    getID(newSummoner);
 }
 
 function Summoner(){
     this.sName =$("#sName").val();
+    document.getElementById("number").innerHTML = this.sName;
     this.sID = 0;
 
 }
@@ -19,7 +20,8 @@ function getID (player){
         data:{},
         success:function(json){
              
-             player.sID = json[player.sName].id;
+             player.sID = json[player.sName].id; //ID does not exist
+             //console.log(player.sID);
              document.getElementById("number").innerHTML = player.sID;
             
         }
