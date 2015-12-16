@@ -1,4 +1,3 @@
-# website
-LoL Statistics tracker
+# LoL Statistics tracker
 
-TBU
+# To Be Updated
