@@ -1,12 +1,12 @@
 function makeSummoner(){
     var newSummoner = new Summoner();
-    getID(newSummoner);
+     getID(newSummoner);
 }
 
 function Summoner(){
     this.sName =$("#sName").val();
-    document.getElementById("number").innerHTML = this.sName;
     this.sID = 0;
+
 
 }
 
@@ -20,11 +20,23 @@ function getID (player){
         data:{},
         success:function(json){
              
-             player.sID = json[player.sName].id; //ID does not exist
-             //console.log(player.sID);
+             player.sID = json[player.sName].id;
              document.getElementById("number").innerHTML = player.sID;
             
         }
     });
 }
 
+function getMostPlayed(player){
+    $.ajax({
+        url:'https://na.api.pvp.net/api/lol/na/v1.3/stats/by-summoner/'+ sID + '/ranked?season=SEASON2015&api_key=03c8f9d3-d619-4593-ad25-6bdfe94517c1',
+        type:'GET',
+        dataType:'json',
+        data:{},
+        success:function(json){
+            //loop through all possible champions
+             for(var i=0;i<json.champions.length;i++){
+
+             }
+
+}
