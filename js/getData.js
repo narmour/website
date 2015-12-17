@@ -5,6 +5,8 @@
 $("document").ready(function() {
     $("input[type = 'text']#sName").val("GooocheyMang");
 
+    //when submit button is pushed, get summoner data.
+    $('#submitbutton').on("click", getSummonerInfo);
 
     //make the list of stats look nice
     $("#summonerInfo").menu({
@@ -15,8 +17,12 @@ $("document").ready(function() {
     });
 
 
-    //when submit button is pushed, get summoner data.
-    $('#submitbutton').click(function(){
+});
+        
+
+
+
+function getSummonerInfo(){
         //get basic summonerInfo    ID and Level
         $('#summonerInfo').empty();
         var name = $('#sName').val();
@@ -36,13 +42,11 @@ $("document").ready(function() {
                     $statList.append('<li>Please enter a summoner name</li>');
                 }
         });
-         
-
-    });
+    }
 
     
 
-});
+
 
 
 
