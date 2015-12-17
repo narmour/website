@@ -4,9 +4,11 @@
 	<title>
 		LeagueOfLegends STATS
 	</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/jquery-ui.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script src="getData.js"></script>
+   <script src = "js/jquery-ui.min.js"></script>
+   <script src = "js/getData.js"></script>
 </head>
  
 <body>
@@ -21,7 +23,7 @@
 			<div class="form">
 				<input id = "sName" type = "text" placeholder = "Summoner Name">
 				<br/>
-				<input class="button" type = "submit" onclick = "submit()">
+				<input class="button" id = "submitbutton" type = "submit">
 				<h1 class="title">Stats</h1>
 				<ul id="stats"></ul>
 			</div>
